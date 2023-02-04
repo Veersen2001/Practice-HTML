@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        .col0
+        {
+            width: 200px;
+            height:200px;
+            background: rgb(80, 222, 97);
+           text-align: center;
+           font-size: 50px;
+           float: left;
+        }
+          .col1
+          {
+              width: 200px;
+              height:200px;
+              background: rgb(177, 35, 35);
+             text-align: center;
+             font-size: 100px;
+             float: left; 
+           /*  position: absolute;
+             
+             bottom: 20px;
+             left: 30px;*/
+           /*  position: relative;
+             bottom:20px;*/
+             position: fixed;
+             bottom: 20px;
+             left: 40px;
+             top:40%;
+          }
+        .col2
+        {
+            width: 200px;
+            height:200px;
+            background: rgb(188, 203, 18);
+            text-align: center;
+            font-size:50px;
+            float: left;
+        }
+        .header{
+            width: 1000px;
+            height: 50px;
+            background-color: blueviolet;
+            text-align: center;
+            position: sticky;
+            top: 5px;
+            
+        }
+
+    </style>
+    
+</head>
+<body>
+   <!---<div>
+     <div class="col0">1</div>  
+     <div class="col1">2</div>  
+     <div class="col2">3</div>     
+    </div>
+    <div style="clear:both;"></div>
+    <!--it is practical of fixed position --> 
+    
+    <div class="header">
+    HOME|about|contact
+    </div>
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut cum dolorum, natus sed obcaecati, nam 
+     laboriosam architecto repellat quos necessitatibus, temporibus nulla. Numquam repellat inventore sunt nesciunt harum fuga vel!
+    </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut cum dolorum, natus sed obcaecati, nam 
+        laboriosam architecto repellat quos necessitatibus, temporibus nulla. Numquam repellat inventore sunt nesciunt harum fuga vel!
+       </p>
+    
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut cum dolorum, natus sed obcaecati, nam 
+        laboriosam architecto repellat quos necessitatibus, temporibus nulla. Numquam repellat inventore sunt nesciunt harum fuga vel!
+       </p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut cum dolorum, natus sed obcaecati, nam 
+        laboriosam architecto repellat quos necessitatibus, temporibus nulla. Numquam repellat inventore sunt nesciunt harum fuga vel!
+       </p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut cum dolorum, natus sed obcaecati, nam 
+        laboriosam architecto repellat quos necessitatibus, temporibus nulla. Numquam repellat inventore sunt nesciunt harum fuga vel!
+       </p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut cum dolorum, natus sed obcaecati, nam 
+        laboriosam architecto repellat quos necessitatibus, temporibus nulla. Numquam repellat inventore sunt nesciunt harum fuga vel!
+       </p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut cum dolorum, natus sed obcaecati, nam 
+        laboriosam architecto repellat quos necessitatibus, temporibus nulla. Numquam repellat inventore sunt nesciunt harum fuga vel!
+       </p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut cum dolorum, natus sed obcaecati, nam 
+        laboriosam architecto repellat quos necessitatibus, temporibus nulla. Numquam repellat inventore sunt nesciunt harum fuga vel!
+       </p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut cum dolorum, natus sed obcaecati, nam 
+        laboriosam architecto repellat quos necessitatibus, temporibus nulla. Numquam repellat inventore sunt nesciunt harum fuga vel!
+       </p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut cum dolorum, natus sed obcaecati, nam 
+        laboriosam architecto repellat quos necessitatibus, temporibus nulla. Numquam repellat inventore sunt nesciunt harum fuga vel!
+       </p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut cum dolorum, natus sed obcaecati, nam 
+        laboriosam architecto repellat quos necessitatibus, temporibus nulla. Numquam repellat inventore sunt nesciunt harum fuga vel!
+       </p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut cum dolorum, natus sed obcaecati, nam 
+        laboriosam architecto repellat quos necessitatibus, temporibus nulla. Numquam repellat inventore sunt nesciunt harum fuga vel!
+       </p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut cum dolorum, natus sed obcaecati, nam 
+        laboriosam architecto repellat quos necessitatibus, temporibus nulla. Numquam repellat inventore sunt nesciunt harum fuga vel!
+       </p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut cum dolorum, natus sed obcaecati, nam 
+        laboriosam architecto repellat quos necessitatibus, temporibus nulla. Numquam repellat inventore sunt nesciunt harum fuga vel!
+       </p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut cum dolorum, natus sed obcaecati, nam 
+        laboriosam architecto repellat quos necessitatibus, temporibus nulla. Numquam repellat inventore sunt nesciunt harum fuga vel!
+       </p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut cum dolorum, natus sed obcaecati, nam 
+        laboriosam architecto repellat quos necessitatibus, temporibus nulla. Numquam repellat inventore sunt nesciunt harum fuga vel!
+       </p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut cum dolorum, natus sed obcaecati, nam 
+        laboriosam architecto repellat quos necessitatibus, temporibus nulla. Numquam repellat inventore sunt nesciunt harum fuga vel!
+       </p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut cum dolorum, natus sed obcaecati, nam 
+        laboriosam architecto repellat quos necessitatibus, temporibus nulla. Numquam repellat inventore sunt nesciunt harum fuga vel!
+       </p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut cum dolorum, natus sed obcaecati, nam 
+        laboriosam architecto repellat quos necessitatibus, temporibus nulla. Numquam repellat inventore sunt nesciunt harum fuga vel!
+       </p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut cum dolorum, natus sed obcaecati, nam 
+        laboriosam architecto repellat quos necessitatibus, temporibus nulla. Numquam repellat inventore sunt nesciunt harum fuga vel!
+       </p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut cum dolorum, natus sed obcaecati, nam 
+        laboriosam architecto repellat quos necessitatibus, temporibus nulla. Numquam repellat inventore sunt nesciunt harum fuga vel!
+       </p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut cum dolorum, natus sed obcaecati, nam 
+        laboriosam architecto repellat quos necessitatibus, temporibus nulla. Numquam repellat inventore sunt nesciunt harum fuga vel!
+       </p> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut cum dolorum, natus sed obcaecati, nam 
+        laboriosam architecto repellat quos necessitatibus, temporibus nulla. Numquam repellat inventore sunt nesciunt harum fuga vel!
+       </p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut cum dolorum, natus sed obcaecati, nam 
+        laboriosam architecto repellat quos necessitatibus, temporibus nulla. Numquam repellat inventore sunt nesciunt harum fuga vel!
+       </p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut cum dolorum, natus sed obcaecati, nam 
+        laboriosam architecto repellat quos necessitatibus, temporibus nulla. Numquam repellat inventore sunt nesciunt harum fuga vel!
+       </p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut cum dolorum, natus sed obcaecati, nam 
+        laboriosam architecto repellat quos necessitatibus, temporibus nulla. Numquam repellat inventore sunt nesciunt harum fuga vel!
+       </p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut cum dolorum, natus sed obcaecati, nam 
+        laboriosam architecto repellat quos necessitatibus, temporibus nulla. Numquam repellat inventore sunt nesciunt harum fuga vel!
+       </p>
+</body>
+</html>

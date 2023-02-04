@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css div</title>
+    <style>
+        .main
+        {
+            height: 800px;
+            width: 800px;
+            background: rgb(60, 17, 199);
+        }
+        #row1{
+            height: 400px;
+            width: 800px;
+            background: rgb(158, 24, 113);
+        }
+        #row2{
+            height: 400px;
+            width: 800px;
+            background: rgb(18, 192, 29);
+        }
+        .col1
+        {
+            height: 400px;
+            width: 400px;
+            background: rgb(198, 8, 8);
+            float:left ;
+            
+        }
+        .col2
+        {
+            height: 400px;
+            width: 400px;
+            background: rgb(235, 97, 184);
+            float:right;
+            
+        }
+        .colrow1{
+            height: 200px;
+            width: 400px;
+            background: rgb(211, 208, 35);
+            float: right;
+        }
+        .colrow2{
+            height: 200px;
+            width: 400px;
+            background: rgb(115, 60, 60);
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div id="row1">
+            <div class="col1">1</div>
+            <div class="colrow1">
+                 2
+            </div>
+            
+            <div class="colrow1">
+                 3
+            </div>
+    
+
+        </div>
+        
+        <div id="row2">
+            <div class="col2" >6</div>
+            <div class="colrow2">
+                 4
+            </div>
+            <div class="colrow2">
+                5
+            </div>
+            
+
+        </div>
+    </div>
+</body>
+</html>

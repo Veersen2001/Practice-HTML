@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+       .main{
+           width: 1000px;
+           height: 2px;
+           background: rgb(225, 9, 9);
+           position: relative;
+           top: 300px;
+       }
+       .wheel{
+           width: 200px;
+           height: 200px;
+           border-radius: 120%;
+           background: rgb(206, 18, 18);
+           position: absolute;
+           top: 110px;
+
+           bottom: 118px;
+           animation-name: wheel;
+           animation-duration: 2s;
+           animation-delay: 2.5s;
+           animation-iteration-count: 3;
+           
+       }
+       @keyframes wheel{
+            /* it is based on time*/
+            from{
+                left: 0;
+            }
+            to{
+                left: 700px;
+            }
+
+        }
+        
+       
+   </style>
+</head>
+<body>
+    <div class="wheel2">
+
+    </div>
+    <div class="wheel">
+         
+     </div>
+    <div class="main">
+        1
+        
+    </div>
+    <div class="piller">
+
+    </div>
+</body>
+</html>

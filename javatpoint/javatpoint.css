@@ -1,0 +1,43 @@
+*{
+    margin:0;
+    padding: 0;
+}
+    
+
+.hover{
+    width: 1000px;
+    height:50px;
+    text-align: center;
+    background:white;
+    margin: auto;
+    position: sticky;
+    top: 5px;
+}
+.hover:hover{
+color: lime;
+}
+.row1{
+    width: 800px;
+    height: 50px;
+    background: rgb(25, 222, 68);
+}
+.row2{
+    width: 800px;
+    height: 50px;
+    background: rgb(234, 241, 236);
+}
+
+.col1{
+    width: 160px;
+    height: 50px;
+    color: blue;
+    float: left;
+}
+.col1:hover{
+    color: white;
+}
+.article{
+  width: 800 px;
+  height: 900px;
+  background: rgb(244, 243, 243);
+}

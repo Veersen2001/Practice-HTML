@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="Enter your name" autocomplete="on" onkeydown="validatename()" id="name">
+    <span id="nameerror"></span>
+    <input type="text" placeholder="Enter your cantact" autocomplete="on" onkeyup="validatecontact()" id="contact">
+    <span id="contacterror"></span>
+    <button onclick="demo()">save</button>
+
+</body>
+<script>
+    var nameerror=document.getElementById('nameerror');
+    var contacterror=document.getElementById('contacterror');
+    function validatename(){
+        var name=document.getElementById('name').value;
+
+        if(name==0)
+        {
+            nameerror.innerHTML="name is required";
+            return false;
+        }
+        if(name.length<3)
+        {
+            nameerror.innerHTML="user name must be 3 char";
+            return false;
+        }
+
+        if(name.length>20)
+        {
+            nameerror.innerHTML="user name less than 20 char";
+            return false;
+        }
+
+        if(name.match(/^[A-Z a-z]+$/))
+        {
+           true;
+        }
+        else{
+            nameerror.innerHTML="only character allowed";
+            return false;
+        }
+
+        nameerror.innerHTML='<i class="fa fa-check-circle" aria-hidden="true"></i>';
+        return true;
+    
+
+
+
+    }
+    function validatecontact(){
+        var contact=document.getElementById('contact').value;
+
+        if(contact==0)
+        {
+            contacterror.innerHTML="Contact is required";
+            return false;
+        }
+        if(contact.length!=10)
+        {
+            contacterror.innerHTML="contact number should be 10 digits";
+            return false;
+        }
+
+       
+
+        if(isNaN(contact))
+        {
+            contacterror.innerHTML="Enter only numeric values";
+            return false;
+        }
+        if((contact.charAt(0)!=9)&&(contact.charAt(0)!=8)&&(contact.charAt(0)!=7)&&(contact.charAt(0)!=6)){
+            contacterror.innerHTML="contact start with 9,8,7,6";
+            return false;
+        }
+        contacterror.innerHTML='<i class="fa fa-check-circle" aria-hidden="true"></i>';
+        return true;
+    
+
+
+
+    }
+
+</script>
+</html>

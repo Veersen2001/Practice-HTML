@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr><td>Emp No.</td><td><input type="number" id="no"></td></tr>
+        <tr><td>Emp Name</td><td><input type="text" id="name"> </td></tr>
+        <tr><td>Salary</td><td><input type="number" id="salary"> </td></tr>
+        <tr><td>Commission</td><td><input type="number" id="commission"> </td></tr>
+        <tr><td>HRA</td><td><input type="text" id="hra"> </td></tr>
+        <tr><td>TA</td><td><input type="text" id="ta"> </td></tr>
+        <tr><td>DA</td><td><input type="text" id="da"> </td></tr>
+        <tr><td>NPS premium</td><td><input type="text" id="nps"> </td></tr>
+        <tr><td>Gross salary</td><td><input type="text" id="gross"> </td></tr>
+        <tr><td>net pay</td><td><input type="text" id="pay"> </td></tr>
+        <tr><td>Income tax</td><td><input type="text" id="tax"> </td></tr>
+        <tr><td><input type="button" id="btn" value="register" onclick="calc()"> </td></tr>
+
+    </table>
+    <script>
+    function calc()
+    {
+      var salary,da,ta,hra,nps,commission,tax ,gs,netpay;
+      salary=document.getElementById('salary').value;
+
+      commission=(20*salary)/100;
+      hra=(50*salary)/100;
+      ta=200;
+      da=(17*salary)/100;
+      nps=(10*(salary+da))/100;
+      gs=salary+da+hra;
+      tax=(10*gs)/100;
+      
+      document.getElementById('hra').value=hra;
+      document.getElementById('da').value=da;
+      document.getElementById('nps').value=nps;
+
+      document.getElementById('commission').value=commission; 
+      document.getElementById('tax').value=tax;
+
+      document.getElementById('ta').value=ta;
+      
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0%;
+        }
+        .main{
+            height: 600px;
+            width: 600px;
+           border: 2px rgb(230, 15, 15) solid;
+          /*  resize: both;
+            font-size: 50px;
+            overflow: hidden;
+            text-indent: 3px; */
+            margin: auto;
+            border-radius: 50%;
+           animation-name: main;
+           animation-duration: 15ms;   
+            
+        
+          animation-delay: 3s;
+          
+          
+
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background:red;
+            border-radius: 50%;
+            position: relative;
+            top: 0px;
+            left: 0px;
+            animation-name: box;
+            animation-duration: 2s;
+            
+        }
+     
+        @keyframes box{
+            /* it is based on time*/
+            0%{
+                
+                background: rgb(243, 8, 8);
+                
+            }
+            25%{
+                top:0px;
+                left: 300px;
+                background: yellow;
+
+            }
+            50%
+            {
+                top: 400px;
+                left: 400px;
+                background: blue;
+
+            }
+            75%
+            {
+                top:400px;
+                left:0px;
+                background: green;
+                
+            }
+
+        }
+        @keyframes main{
+            /* it is based on time*/
+            0%{
+                top: 0px;
+                left: 0px;
+                border: 2px red solid;
+
+            }
+            25%{
+                top:0px;
+                left: 400px;
+                border: 2px yellow solid;
+
+            }
+            50%
+            {
+                top: 400px;
+                left: 400px;
+                border: 2px blue solid;
+
+            }
+            75%
+            {
+                top:400px;
+                left:0px;
+                border: 2px green solid;
+                
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+      <div class="box">
+         <h1 style="position:relative; margin:auto;top: 70px; left: 50px;">ATUL</h1>
+      </div>
+    </div>
+</body>
+</html>
